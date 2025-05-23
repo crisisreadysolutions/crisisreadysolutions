@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Crisis Ready Solutions for CPR and First Aid training in Central Florida. Schedule your personalized training today.">
+  <title>Contact Us - Crisis Ready Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.png" alt="Crisis Ready Solutions Logo" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header py-5 mb-5" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/contact-header.jpg'); background-size: cover; background-position: center; margin-top: 76px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center text-white">
+          <h1 class="fw-bold">Contact Us</h1>
+          <p class="lead">Schedule your CPR and First Aid training today</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="contact-form">
+            <h2 class="mb-4">Schedule Your Training</h2>
+            <form id="scheduleForm" class="needs-validation" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                  <input type="text" class="form-control" id="name" name="name" required>
+                  <div class="invalid-feedback">Please enter your name</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                  <div class="invalid-feedback">Please enter a valid email</div>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="phone" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                  <input type="tel" class="form-control" id="phone" name="phone" required>
+                  <div class="invalid-feedback">Please enter your phone number</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="organization" class="form-label">Organization/Company</label>
+                  <input type="text" class="form-control" id="organization" name="organization">
+                </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="service" class="form-label">Service Needed <span class="text-danger">*</span></label>
+                <select class="form-select" id="service" name="service" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="CPR/AED Training">CPR/AED Training</option>
+                  <option value="First Aid Training">First Aid Training</option>
+                  <option value="Combined CPR/First Aid">Combined CPR/First Aid</option>
+                  <option value="Corporate Training">Corporate Training</option>
+                  <option value="Other">Other (please specify)</option>
+                </select>
+                <div class="invalid-feedback">Please select a service</div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="groupSize" class="form-label">Approximate Group Size <span class="text-danger">*</span></label>
+                <select class="form-select" id="groupSize" name="groupSize" required>
+                  <option value="" selected disabled>Select group size</option>
+                  <option value="1-5">1-5 people</option>
+                  <option value="6-10">6-10 people</option>
+                  <option value="11-20">11-20 people</option>
+                  <option value="21+">21+ people</option>
+                </select>
+                <div class="invalid-feedback">Please select group size</div>
+              </div>
+              
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="preferredDate" class="form-label">Preferred Date <span class="text-danger">*</span></label>
+                  <input type="date" class="form-control" id="preferredDate" name="preferredDate" required>
+                  <div class="invalid-feedback">Please select a preferred date</div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="alternateDate" class="form-label">Alternate Date</label>
+                  <input type="date" class="form-control" id="alternateDate" name="alternateDate">
+                </div>
+              </div>
+              
+              <div class="mb-4">
+                <label for="message" class="form-label">Additional Information or Questions</label>
+                <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+              
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label" for="terms">I agree to be contacted about scheduling training <span class="text-danger">*</span></label>
+                <div class="invalid-feedback">You must agree before submitting</div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-lg">Submit Request</button>
+            </form>
+          </div>
+        </div>
+        
+        <div class="col-lg-5">
+          <div class="contact-info-card">
+            <h2 class="mb-4">Get In Touch</h2>
+            
+            <div class="contact-info-item">
+              <i class="fas fa-envelope contact-info-icon"></i>
+              <div>
+                <h5>Email Us</h5>
+                <p><a href="mailto:yourcrisissolutions@gmail.com">yourcrisissolutions@gmail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="fas fa-phone-alt contact-info-icon"></i>
+              <div>
+                <h5>Call Us</h5>
+                <p><a href="tel:7403347077">(740) 334-7077</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <i class="fab fa-facebook contact-info-icon"></i>
+              <div>
+                <h5>Connect with Us</h5>
+                <p><a href="https://www.facebook.com/Crisis-Ready-Solutions-llc-61569373581001/" target="_blank">Crisis Ready Solutions LLC</a></p>
+              </div>
+            </div>
+            
+            <div class="mt-5">
+              <h4 class="mb-3">Why Choose Us</h4>
+              <ul class="list-unstyled">
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> 30+ years of Fire/EMS experience</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Personalized training at your location</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> HSI/AHA standards certification</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Group discounts available</li>
+                <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Veteran owned business</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Frequently Asked Questions</h2>
+      
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How long does a typical training session last?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  CPR/AED training typically takes 2-3 hours, while full First Aid training can take 4-6 hours. Combined CPR/First Aid courses are usually completed in a full day (6-8 hours). However, we can adjust the schedule based on your group's needs and availability.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How many people can be trained in a single session?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We can accommodate groups of all sizes. For optimal learning, we recommend classes of 6-12 participants, but we're flexible to work with your needs. Group discounts are available for classes with more than 6 participants.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Do you provide certification upon completion?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes, all participants who successfully complete our training receive certification cards that are valid for 2 years. Our training follows HSI/AHA standards which are widely recognized by employers and organizations.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Do you travel to our location for training?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! We provide on-site training throughout Central Florida. This allows your team to learn in a familiar environment and eliminates the need for travel. There's no additional charge for this service within our service area.
+                </div>
+              </div>
+            </div>
+            
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  What should participants wear to training?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Participants should wear comfortable clothing that allows for movement, as CPR training involves kneeling beside manikins. Casual business attire is fine, but consider bringing a sweater as room temperatures can vary.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <img src="assets/logo.png" alt="Crisis Ready Solutions Logo" class="footer-logo mb-4">
+          <p>Your one stop for CPR and First aid training in Central Florida. Veteran owned and operated.</p>
+        </div>
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled footer-contact">
+            <li><a href="mailto:yourcrisissolutions@gmail.com"><i class="fas fa-envelope me-2"></i>yourcrisissolutions@gmail.com</a></li>
+            <li><a href="tel:7403347077"><i class="fas fa-phone me-2"></i>(740) 334-7077</a></li>
+            <li><a href="https://www.facebook.com/Crisis-Ready-Solutions-llc-61569373581001/" target="_blank"><i class="fab fa-facebook me-2"></i>Crisis Ready Solutions LLC</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="small mb-0">&copy; 2023 Crisis Ready Solutions LLC. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <a href="#" class="me-3 text-decoration-none text-white-50 small">Privacy Policy</a>
+          <a href="#" class="text-decoration-none text-white-50 small">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
