@@ -42,14 +42,19 @@
 
   <!-- Hero Section -->
   <header id="hero" class="d-flex align-items-center">
-    <div class="container">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
       <div class="row">
-        <div class="col-lg-7 mx-auto text-center text-white">
+        <div class="col-lg-8 mx-auto text-center text-white">
           <h1 class="display-4 fw-bold mb-4 animated fadeInDown">Be Prepared When Every Second Counts</h1>
           <p class="lead mb-5 animated fadeInUp">Professional CPR & First Aid Training at Your Location</p>
-          <a href="contact.html" class="btn btn-primary btn-lg animated pulse">Schedule Training Now</a>
+          <div class="d-flex justify-content-center">
+            <a href="contact.html" class="btn btn-primary btn-lg animated pulse me-3">Schedule Training Now</a>
+            <a href="services.html" class="btn btn-outline-light btn-lg">Our Services</a>
+          </div>
         </div>
       </div>
+      <div class="hero-bottom-curve"></div>
     </div>
   </header>
 
@@ -65,6 +70,9 @@
       <div class="row">
         <div class="col-md-4 mb-4">
           <div class="card h-100 service-card">
+            <div class="img-hover-zoom">
+              <img src="https://images.unsplash.com/photo-1599045118108-bf9954418b76?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="CPR Training Session">
+            </div>
             <div class="card-body text-center">
               <i class="fas fa-heartbeat service-icon mb-3"></i>
               <h4 class="card-title">CPR/AED Training</h4>
@@ -74,6 +82,9 @@
         </div>
         <div class="col-md-4 mb-4">
           <div class="card h-100 service-card">
+            <div class="img-hover-zoom">
+              <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="First Aid Training">
+            </div>
             <div class="card-body text-center">
               <i class="fas fa-first-aid service-icon mb-3"></i>
               <h4 class="card-title">First Aid Training</h4>
@@ -83,6 +94,9 @@
         </div>
         <div class="col-md-4 mb-4">
           <div class="card h-100 service-card">
+            <div class="img-hover-zoom">
+              <img src="https://images.unsplash.com/photo-1522071901873-411886a10004?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Group Training Session">
+            </div>
             <div class="card-body text-center">
               <i class="fas fa-users service-icon mb-3"></i>
               <h4 class="card-title">Group & Corporate Training</h4>
@@ -102,20 +116,20 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
-          <div class="about-image-container">
-            <img src="assets/instructor.jpg" alt="George Roat - CPR Instructor" class="img-fluid rounded shadow about-image">
+          <div class="about-image-container reveal">
+            <img src="https://images.unsplash.com/photo-1544441891-a0b848e1cf39?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="George Roat - CPR Instructor" class="img-fluid rounded shadow about-image">
           </div>
         </div>
         <div class="col-lg-6 order-lg-1">
-          <div class="about-content">
+          <div class="about-content reveal">
             <h2>George Roat</h2>
             <h3 class="text-muted mb-4">Firefighter/Paramedic (Retired)</h3>
             <p class="lead">With over 30 years experience in Fire/Emergency Medical Services, Crisis Ready Solutions is your one stop for CPR and First aid training in Central Florida.</p>
             <p>Using HSI/AHA standards, we come to your location to provide your personalized training. Our mission is to equip the public with needed skills to achieve the best outcome when a crisis arises - because most emergencies do not occur in the hospital, but where you work and live.</p>
             <div class="badges mt-4">
-              <span class="badge bg-secondary me-2">Veteran Owned</span>
-              <span class="badge bg-secondary me-2">HSI Certified</span>
-              <span class="badge bg-secondary">AHA Standards</span>
+              <span class="badge bg-primary me-2 p-2">Veteran Owned</span>
+              <span class="badge bg-secondary me-2 p-2">HSI Certified</span>
+              <span class="badge bg-secondary p-2">AHA Standards</span>
             </div>
           </div>
         </div>
@@ -131,6 +145,13 @@
         <div class="col-md-4 mb-4">
           <div class="card testimonial-card h-100">
             <div class="card-body">
+              <div class="d-flex align-items-center mb-4">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Sarah Johnson" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0">Sarah Johnson</h5>
+                  <p class="text-muted mb-0">HR Manager</p>
+                </div>
+              </div>
               <div class="testimonial-stars mb-3">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -139,13 +160,19 @@
                 <i class="fas fa-star"></i>
               </div>
               <p class="card-text">"George's training was professional, informative, and engaging. Our staff now feels confident in their emergency response skills."</p>
-              <p class="testimonial-name">- Sarah Johnson, HR Manager</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card testimonial-card h-100">
             <div class="card-body">
+              <div class="d-flex align-items-center mb-4">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Michael Torres" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0">Michael Torres</h5>
+                  <p class="text-muted mb-0">Small Business Owner</p>
+                </div>
+              </div>
               <div class="testimonial-stars mb-3">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -154,13 +181,19 @@
                 <i class="fas fa-star"></i>
               </div>
               <p class="card-text">"The on-site training was convenient and thorough. Crisis Ready Solutions exceeded our expectations with their professionalism."</p>
-              <p class="testimonial-name">- Michael Torres, Small Business Owner</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mb-4">
           <div class="card testimonial-card h-100">
             <div class="card-body">
+              <div class="d-flex align-items-center mb-4">
+                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Lisa Matthews" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                  <h5 class="mb-0">Lisa Matthews</h5>
+                  <p class="text-muted mb-0">Daycare Director</p>
+                </div>
+              </div>
               <div class="testimonial-stars mb-3">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -169,7 +202,6 @@
                 <i class="fas fa-star"></i>
               </div>
               <p class="card-text">"As a daycare provider, having proper CPR certification is essential. The training was comprehensive and tailored to our specific needs."</p>
-              <p class="testimonial-name">- Lisa Matthews, Daycare Director</p>
             </div>
           </div>
         </div>
