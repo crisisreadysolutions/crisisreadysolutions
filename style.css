@@ -155,11 +155,6 @@ body {
 
 .logo {
   height: 50px;
-  transition: transform 0.3s ease;
-}
-
-.navbar-brand:hover .logo {
-  transform: scale(1.05);
 }
 
 .nav-link {
@@ -272,30 +267,6 @@ body {
   border: none;
   border-radius: 10px;
   transition: all 0.3s ease;
-
-/* Schedule Training Now Button */
-.schedule-btn {
-  background: linear-gradient(135deg, #d9534f, #c9302c);
-  border: none;
-  box-shadow: 0 4px 15px rgba(217, 83, 79, 0.4);
-  padding: 14px 32px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
-}
-
-.schedule-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(217, 83, 79, 0.5);
-  background: linear-gradient(135deg, #c9302c, #a52724);
-}
-
-.schedule-btn:active {
-  transform: translateY(-2px);
-}
-
-
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -445,8 +416,6 @@ footer {
 
 .footer-logo {
   height: 60px;
-  margin-bottom: 15px;
-  filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.1));
 }
 
 .footer-contact li {
