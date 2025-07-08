@@ -68,6 +68,67 @@ body {
   transform: translateY(0);
 }
 
+/* Slide Animations */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease;
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.8s ease;
+}
+
+.slide-in-up {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.slide-in-left.active,
+.slide-in-right.active,
+.slide-in-up.active {
+  opacity: 1;
+  transform: translate(0);
+}
+
+/* Hero Text Animations */
+.hero-title {
+  animation: slideInDown 1.2s ease-out;
+}
+
+.hero-subtitle {
+  animation: slideInUp 1.2s ease-out 0.3s both;
+}
+
+.hero-buttons {
+  animation: fadeInUp 1.2s ease-out 0.6s both;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -187,7 +248,7 @@ body {
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1631815587646-b85a0b298dd5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1631815587646-b85a0b298dd5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -204,7 +265,35 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle at center, rgba(217, 83, 79, 0.3) 0%, rgba(0, 0, 0, 0.6) 70%);
+  background: linear-gradient(135deg, rgba(217, 83, 79, 0.2) 0%, rgba(0, 0, 0, 0.8) 70%);
+}
+
+/* Emergency Light Animation */
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 0, 0, 0.3), rgba(0, 0, 255, 0.3), transparent);
+  animation: emergencyLights 3s infinite;
+  z-index: 1;
+}
+
+@keyframes emergencyLights {
+  0% { left: -100%; }
+  50% { left: 100%; }
+  100% { left: -100%; }
+}
+
+/* Glass Effect for Cards */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -215,6 +304,8 @@ body {
   padding: 12px 28px;
   border-radius: 30px;
   transition: all 0.3s ease;
+  border-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .btn-outline-light:hover {
@@ -222,6 +313,13 @@ body {
   color: var(--primary-color);
   transform: translateY(-3px);
   box-shadow: 0 7px 20px rgba(255, 255, 255, 0.2);
+  border-color: white;
+}
+
+.btn-outline-light:focus {
+  outline: 3px solid rgba(255, 255, 255, 0.5) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
 }
 
 .btn-primary {
@@ -260,10 +358,36 @@ body {
 }
 
 /* Services Section */
+#services {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+}
+
 .service-card {
   border: none;
-  border-radius: 10px;
-  transition: all 0.3s ease;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.service-card .card-body {
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.service-card .card-title {
+  color: white;
+}
+
+.service-card .card-text {
+  color: rgba(255, 255, 255, 0.8);
+}
 
 /* Schedule Training Now Button */
 .schedule-btn {
@@ -275,6 +399,8 @@ body {
   letter-spacing: 0.5px;
   text-transform: uppercase;
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
 }
 
 .schedule-btn:hover {
@@ -285,14 +411,6 @@ body {
 
 .schedule-btn:active {
   transform: translateY(-2px);
-}
-
-
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 1;
-  background: white;
 }
 
 .service-card:after {
@@ -431,8 +549,19 @@ body {
 
 /* Footer */
 footer {
-  background-color: #222;
+  background: linear-gradient(135deg, #1a1a1a 0%, #000 100%);
   color: white;
+  position: relative;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
 }
 
 .footer-logo {
