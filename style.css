@@ -207,15 +207,7 @@ body {
   background: radial-gradient(circle at center, rgba(217, 83, 79, 0.3) 0%, rgba(0, 0, 0, 0.6) 70%);
 }
 
-.hero-bottom-curve {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  background: white;
-  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-}
+
 
 .btn-outline-light {
   border-width: 2px;
