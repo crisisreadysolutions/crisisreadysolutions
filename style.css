@@ -290,6 +290,7 @@ body {
 /* Glass Effect for Cards */
 .glass-effect {
   background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
@@ -371,6 +372,7 @@ body {
   position: relative;
   z-index: 1;
   background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -589,28 +591,7 @@ footer::before {
   margin-bottom: 10px;
 }
 
-/* Contact Form */
-.contact-form {
-  background-color: white;
-  border-radius: 5px;
-  padding: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
 
-.form-control {
-  border-radius: 0;
-  border: 1px solid #ddd;
-  padding: 12px 15px;
-}
-
-.form-control:focus {
-  box-shadow: none;
-  border-color: var(--primary-color);
-}
-
-.form-label {
-  font-weight: 600;
-}
 
 .contact-info-card {
   border-radius: 5px;
@@ -722,7 +703,7 @@ footer::before {
 }
 
 /* ADA Focus Styles */
-a:focus, button:focus, input:focus, textarea:focus, select:focus {
+a:focus, button:focus {
   outline: 3px solid var(--primary-color) !important;
   outline-offset: 2px !important;
 }
@@ -752,4 +733,28 @@ img:not(.loaded) {
 
 .img-hover-zoom:hover img {
   transform: scale(1.05);
+}
+
+/* Page Header Styles */
+.page-header {
+  background-size: cover;
+  background-position: center;
+  margin-top: 76px;
+}
+
+.page-header.about-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/about-header.jpg');
+}
+
+.page-header.contact-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/contact-header.jpg');
+}
+
+.page-header.services-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/services-header.jpg');
+}
+
+/* Hero Section Z-index */
+.hero-content {
+  z-index: 10;
 }
